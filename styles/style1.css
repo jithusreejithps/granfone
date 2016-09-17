@@ -1,0 +1,26 @@
+
+.sp-accordion.sp-accordion-style1 {
+    border: 1px solid #CCCCCC;
+}
+.sp-accordion.sp-accordion-style1 .toggler, .sp-accordion.sp-accordion-style1 .toggler span, .sp-accordion.sp-accordion-style1 .toggler span span {
+    background: url("style1.png") repeat-x scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.sp-accordion.sp-accordion-style1 .toggler span, .sp-accordion.sp-accordion-style1 .toggler span span {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 13px;
+    font-weight: 700;
+}
+.sp-accordion.sp-accordion-style1 .toggler span span {
+    padding: 0 16px;
+}
+.sp-accordion.sp-accordion-style1 .toggler:hover, .sp-accordion.sp-accordion-style1 .active {
+    background-position: 0 -30px;
+}
+.sp-accordion.sp-accordion-style1 .sp-accordion-inner {
+    background: url("border-bottom.png") repeat-x scroll 0 100% transparent;
+    padding: 0 16px;
+}

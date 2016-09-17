@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="iso-8859-1">
+      <title>GrandFone | Contact Us</title>
+      <link rel="STYLESHEET" type="text/css" href="styles/contactForm.css">
+      <script type="text/javascript" src="scripts/gen_validatorv31.js"></script>
+      <script type="text/javascript" src="scripts/mootools.js"></script>
+  <script type="text/javascript" src="scripts/domready_fix.js"></script>
+  <script type="text/javascript" src="scripts/modal.js"></script>
+  <script type="text/javascript" src="scripts/k2.js"></script>
+  <script type="text/javascript" src="scripts/jcomments-v2.1.js?v=2"></script>
+  <script type="text/javascript" src="scripts/ajax.js"></script>
+  <script type="text/javascript" src="scripts/caption.js"></script>
+<link rel="stylesheet" href="styles/style1.css" type="text/css">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+<style>
+   td h3,td h3 span{
+      font-size: 14px;
+      font-weight: bold;
+   }
+</style>
+
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1"  style="background-image:url('images/headerTexture.jpg')">
+  <header id="header" class="clear">
+    <hgroup>
+      <div><img src="images/logo1.png"></div>
+    </hgroup>
+  </header>
+</div>
+<div class="wrapper row2">
+  <nav id="topnav" class="clear">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Rates</a></li>
+      <li><a href="#">Dialers</a>
+        <ul>
+          <li><a href="pc_download.html">PC Dialer</a></li>
+          <li><a href="mobile_download.html">Mobile Dialer</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Login</a>
+        <ul>
+          <li><a href="http://login.grandfone.net/">Reseller Old</a></li>
+          <li><a href="http://reseller.grandfone.net/">Reseller</a></li>
+        </ul>
+      </li>
+  <li  class="active last"><a href="contact_us.html">Contact US</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+<div id="container" class="clear"><!-- Slider --><section id="featured_slide_"><!-- ########################################################################################## -->
+<ul id="featured_slide_Content">
+<li class="featured_slide_Image" style="display: block;"><figure><a href="#"><img src="images/demo/contactusbanner.jpg" alt="" /></a> <figcaption>
+<h2>Platform Support</h2>
+<p>The VOIP dialers are now available in all major mobile platforms</p>
+</figcaption> </figure></li>
+<li class="clear featured_slide_Image"><!-- Important - Leave This Empty --></li>
+</ul>
+<!-- ########################################################################################## --></section><!-- main content -->
+<div id="homepage"><!-- Introduction --><section id="intro" class="clear"><article class="two_third"><section id="comments">
+<h2>Contact US</h2>
+<script type="text/javascript">// <![CDATA[
+    function validateEmail(email){
+        var regex=/[^\s@]+@[^\s@]+\.[^\s@]+/;
+        return regex.test(email);
+    }
+		function validateForm(){
+			name=document.getElementById("name").value;
+			email=document.getElementById("email").value;
+      subject=document.getElementById("subject1").value;
+      comment=document.getElementById("comment1").value;
+			if(name==""||name==null){
+				alert("Please type your name");
+				return false;
+			}
+			if(email==""||email==null){
+				alert("Please type your email");
+				return false;
+			}
+      if(!validateEmail(email)){
+        alert("Invalid email");
+        return false;
+      }
+      if(subject==""||subject==null){
+        alert("Plese type a subject");
+        return false;
+      }
+
+      if(comment==""||comment==null){
+        alert("Please type your query");
+        return false;
+      }
+			return true;
+		}
+	
+// ]]></script>
+<form method="post" action="mail.php" onsubmit="return validateForm();" name="myContactForm">
+<p><input size="22" value="" id="name" name="name" type="text" /> <label for="name"><small>Name (required)</small></label></p>
+<p><input size="22" value="" id="email" name="email" type="text" /> <label for="email"><small>Mail (required)</small></label></p>
+<p><input size="22" value="" id="subject1" name="subject" type="text" /> <label for="subject"><small>Subject (required)</small></label></p>
+<p><textarea rows="10" cols="25" id="comment1" name="comment" style="height: 156px;"></textarea> <label class="hidden" for="comment"><small>Comment (required)</small></label></p>
+<p><input value="Submit" id="submit" name="submit" type="submit" /> &nbsp; <input value="Reset" id="reset" name="reset" type="reset" /></p>
+</form></section></article><article class="one_third"><a href="#"><img src="images/demo/contact.jpg" alt="" height="300" width="300" /></a></article></section><!-- / Introduction --> <!-- ########################################################################################## --></div>
+<!-- / content body --></div>
+</div>
+<!-- Footer -->
+<div class="wrapper row5">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Grandfone.net</a></p>
+    <p class="fl_right">Designed by&nbsp;<a href="http://www.sksarts.com/" title="">SKS Arts</a></p>
+  </footer>
+</div>
+</body>
+</html>

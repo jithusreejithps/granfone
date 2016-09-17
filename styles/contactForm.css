@@ -1,0 +1,39 @@
+
+form, fieldset, legend {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    display: none;
+}
+input, textarea, select {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 1em;
+}
+#comments form {
+    display: block;
+    width: 100%;
+}
+#comments form input {
+    border: 1px solid #D6D6D6;
+    margin: 5px 5px 0 0;
+    padding: 2px;
+    width: 26.9841%;
+}
+#comments form textarea {
+    border: 1px solid #D6D6D6;
+    overflow: auto;
+    padding: 2px;
+    width: 98%;
+}
+#comments form p {
+    margin: 5px 0;
+}
+#comments form #submit, #comments form #reset {
+    background-color: #F7F7F7;
+    color: #666666;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+}
